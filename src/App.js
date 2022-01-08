@@ -10,7 +10,7 @@ const opacity = useTransform(x, [-100, 0, 100], [0, 1, 0])
 // return <motion.div drag="x" style={{ x, opacity }} />
   return (
     <div className="App">
-      <motion.form drag='x' animate={{x:[100,0]}} style={{x,opacity}}>
+      <motion.form drag='x' initial="hidden" animate={{x:[100,0]}} style={{x,opacity}}>
         <h1>Create An Account</h1>
         <label>
           Email:
